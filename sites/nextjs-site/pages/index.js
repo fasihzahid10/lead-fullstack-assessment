@@ -49,11 +49,10 @@ export async function getStaticProps() {
 
   return {
     props: { entries },
-    revalidate: 30, // ISR refreshes every 30s
+    revalidate: 10, 
   };
 }
 
-// 🎨 Inline Styles
 const styles = {
   container: {
     maxWidth: "1000px",
